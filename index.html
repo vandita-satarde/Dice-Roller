@@ -51,5 +51,36 @@
 
         <button onclick="roll()">Roll</button>
     </div>
+
+    <script>
+        function roll(){
+            const min = 1;
+            const max = 6;
+            const randomNum = Math.round(Math.random() * (max-min)) + min;
+            
+            const diceImg = document.getElementById('dice-img');
+
+            switch (randomNum){
+                case 1:
+                    diceImg.src = 'Dice-one.png';
+                    break;
+                case 2:
+                    diceImg.src = 'Dice-two.png';
+                    break;
+                case 3:
+                    diceImg.src = 'Dice-three.png';
+                    break;
+                case 4:
+                    diceImg.src = 'Dice-four.png';
+                    break;
+                case 5:
+                    diceImg.src = 'Dice-five.png';
+                    break;
+                case 6:
+                    diceImg.src = 'Dice-six.png';
+                    break;
+            }
+        }
+    </script>
 </body>
 </html>
