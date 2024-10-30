@@ -53,6 +53,12 @@
     </div>
 
     <script>
+
+        function rollAgn(){
+           const diceImg = document.getElementById('dice-img');
+           diceImg.src = 'Dice.png';
+        }
+
         function roll(){
             const min = 1;
             const max = 6;
@@ -80,6 +86,8 @@
                     diceImg.src = 'Dice-six.png';
                     break;
             }
+
+            setTimeout(rollAgn, 3000);
         }
     </script>
 </body>
